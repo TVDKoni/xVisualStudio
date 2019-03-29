@@ -1,15 +1,10 @@
 # xVisualStudio 
 A DSC Resource to install / uninstall visual studio
 
-Version: 1.0.0
-
-Will be release to PSGallery soon!
+Version: 1.0.1
 
 NB: Uninstalling of VS Code does not work yet.
-
 Note: Installing Enterprise/Pro without installation args will add /Full installation
-
-
 
 ## How to use
 
