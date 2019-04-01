@@ -5,7 +5,7 @@ enum Ensure
 }
 
 [DscResource()]
-class xVisualStudio 
+class xSetupVisualStudio 
 {
 
        [DscProperty(Key)]
@@ -27,9 +27,6 @@ class xVisualStudio
        [DscProperty(Mandatory)]
        [Ensure] $Ensure
 
-       [DscProperty(NotConfigurable)]
-       [bool] $IsValid
-
        [void] validateArguments(){
             
             if($this.AdminDeploymentFile){
@@ -49,7 +46,7 @@ class xVisualStudio
                     'Microsoft Visual Studio Community 2015' {
                         $this.SetupFile = 'https://download.microsoft.com/download/D/2/3/D23F4D0F-BA2D-4600-8725-6CCECEA05196/vs_community_ENU.exe'
                     }
-                    'Microsoft Visual Studio Enterprise 2017'  {
+                    'Visual Studio Enterprise 2017'  {
                         $this.SetupFile = 'https://download.visualstudio.microsoft.com/download/pr/3f2ebcc9-af11-4059-8c29-be4326fd9ca5/774c73c98597e433c92f50aa8dcafaeb/vs_enterprise.exe'
                     }
                     'Visual Studio Professional 2017' {
