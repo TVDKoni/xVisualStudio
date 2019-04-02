@@ -93,7 +93,7 @@ class xSetupVisualStudio
 
 
 
-       [xVisualStudio] Get()
+       [xSetupVisualStudio] Get()
        {
             Write-Debug "Getting package";                        
             $this.Ensure = [Ensure]::Absent;            
